@@ -20,5 +20,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_dependency "HTTParty", "~> 0.12.0"
+  spec.add_dependency "rest_client", "~> 0.12.0"
 end
