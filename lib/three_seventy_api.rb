@@ -1,13 +1,15 @@
-require "./lib/three_seventy_api/version"
-require "./lib/three_seventy_api/api"
-require "./lib/three_seventy_api/client"
-require "./lib/three_seventy_api/helpers/request"
-
-require "rest_client"
+require 'rest-client'
+require 'three_seventy_api/version'
+require 'three_seventy_api/api'
+require 'three_seventy_api/helpers/request'
 module ThreeSeventyApi
-  class << self
+  class Client
+    include Helpers::Request
+    attr_reader :username, :password
+    include Api
+    def initialize(username,password)
+      @username = username
+      @password = password
+    end
   end
-  autoload :Api, "three_seventy_api/api"
-  autoload :Client, "three_seventy_api/client"
-  autoload :Helpers, "three_seventy_api/helpers"
 end
