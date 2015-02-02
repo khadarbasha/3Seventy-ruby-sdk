@@ -19,10 +19,12 @@ Or install it yourself as:
     $ gem install three_seventy_api
 
 
-## Usage
+## Sample Usage
 
 Initialize the client
 ```ruby
-   $ client = ThreeSeventyApi::Client.new($username,$password)   
+   client = ThreeSeventyApi::Client.new($username,$password)
+   client.all_accounts() (or)
+   client.all_accounts({:inactive=>true}) 
+
 ```
-From now you can use client to further communication with api.
