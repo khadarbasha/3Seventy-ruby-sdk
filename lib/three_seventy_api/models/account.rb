@@ -1,5 +1,5 @@
 # Public: Details for an account.
-# Extends Base class.
+# Extends the Base class.
 class Account < Base
   # Public: 
   #       setter/getter for Status.
