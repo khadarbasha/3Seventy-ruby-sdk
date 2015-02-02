@@ -2,7 +2,6 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'three_seventy_api/version'
-
 Gem::Specification.new do |spec|
   spec.name          = "three_seventy_api"
   spec.version       = ThreeSeventyApi::VERSION
@@ -20,5 +19,6 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_dependency "rest_client", "~> 0.12.0"
+  spec.add_dependency "rest-client"
+  spec.add_dependency "tomdoc"
 end
