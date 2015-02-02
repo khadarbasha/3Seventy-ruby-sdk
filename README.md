@@ -22,7 +22,7 @@ Or install it yourself as:
 ## Usage
 
 Initialize the client
-
+```ruby
    $ client = ThreeSeventyApi::Client.new($username,$password)   
-
+```
 From now you can use client to further communication with api.
