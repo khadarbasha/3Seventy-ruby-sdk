@@ -1,6 +1,6 @@
 # ThreeSeventyApi
 
-TODO: Write a gem description
+Ruby wrapper for 3Seventy Api.
 
 ## Installation
 
@@ -18,14 +18,11 @@ Or install it yourself as:
 
     $ gem install three_seventy_api
 
+
 ## Usage
 
-TODO: Write usage instructions here
+Initialize the client
 
-## Contributing
+   $ client = ThreeSeventyApi::Client.new($username,$password)   
 
-1. Fork it ( https://github.com/[my-github-username]/three_seventy_api/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+From now you can use client to further communication with api.
