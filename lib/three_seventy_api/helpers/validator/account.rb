@@ -1,6 +1,6 @@
 module ThreeSeventyApi
   module Helpers::Validator::Account
-    def self.add
+    def self.add_account
       json = {
         "type" => "object",
         "required" => ["ParentId","Name","Channels","Attributes"],
@@ -11,6 +11,9 @@ module ThreeSeventyApi
           "Attributes" => {"type" => "array"}
         }
       }
+    end
+    def self.edit_account
+      add_account
     end
   end
 end
