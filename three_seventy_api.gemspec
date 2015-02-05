@@ -22,4 +22,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "rest-client"
   spec.add_dependency "tomdoc"
   spec.add_dependency "json-schema"
+  spec.add_development_dependency "pry"
 end
