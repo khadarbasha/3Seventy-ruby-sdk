@@ -1,6 +1,6 @@
 require 'three_seventy_api'
 require 'yaml'
-# Example to add a new attribute to the account.
+# Example to get the attribute details.
 class Attribute
   def run
     # Load config file
@@ -16,7 +16,7 @@ class Attribute
     # Initiate the client.
     client = ThreeSeventyApi::Client.new(:url => url, :username => username, :password => password)
     attribute_name = ## Fill attribute name here.
-    # Now add the new attribute and print the result.
+    # Now get the attribute details and print the result.
     puts client.attribute(account_id, attribute_name)
   end
 end
