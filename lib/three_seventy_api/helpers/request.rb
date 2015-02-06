@@ -2,21 +2,26 @@ module ThreeSeventyApi
   module Helpers
     module Request
       def client
-        @client ||= RestClient::Resource::new("https://api.3seventy.com/api/v2.0", :user => "khadarbasha.s@hotmail.com", :password => "GUR{tA{e;;")
+        @client ||= RestClient::Resource::new(@url, :user => @username, :password => @password)
       end
       def get(path)
        response =  client[path].get :accept => :json, :content_type => :json
        raise_errors(response)
+       response
       end
       def post(path, payload)
         response = client[path].post payload
         raise_errors(response)
+        response
       end
       def delete(path)
         response = client[path].delete
         raise_errors(response)
+        response
       end
       def raise_errors(response)
+      end
+      def raise_errors_(response)
           binding.pry
           response_code = response.code
           response_data = response_data
