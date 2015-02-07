@@ -7,20 +7,19 @@ module ThreeSeventyApi
         get(end_point)
       end
       def add_account(id, payload)
-        raise ThreeSeventyApi::Errors::IdMissingError if id.nil?
         end_point = "/account/#{id}"
-        post(end_point, id, payload)
+        post(end_point, payload)
       end
       def delete_account(id)
-        raise ThreeSeventyApi::Errors::IdMissingError if id.nil?
         end_point = "/account/#{id}"
-        delete(end_point, id)
+        delete(end_point)
       end
       def edit_account(id, payload)
+        end_point = "/account/#{id}"
+        put(end_point, payload)
       end
       # Get a specified account
-      def account(id)
-        raise ThreeSeventyApi::Errors::IdMissingError if id.nil?
+      def get_account(id)
         end_point = "/account/#{id}"
         get(end_point)
       end
