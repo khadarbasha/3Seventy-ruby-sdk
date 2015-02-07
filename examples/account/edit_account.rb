@@ -19,7 +19,7 @@ class EditAccount
       "Name" => # Set name here.,
       "ParentId" => # Set parentId here.,
       "Attributes" => # Set attributes here.,
-    }.to_json
+    }
     # Make a call to Account/EditAccount api and print the result.
     puts client.edit_account(account_id, payload)
   end
