@@ -13,7 +13,7 @@ class DeleteAttributeDefinition
     username = config['username']
     # Load the password from config.
     password = config['password']
-    attribute_id = 7 ## Fill the attribute_id here.
+    attribute_id = -1 ## Fill the attribute_id here.
     # Initiate the client.
     client = ThreeSeventyApi::Client.new(url, username, password)
     # Now make a call to DeleteAttributeDefinition api and print the result.
