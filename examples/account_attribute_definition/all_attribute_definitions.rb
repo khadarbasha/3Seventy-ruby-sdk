@@ -1,6 +1,6 @@
 require 'three_seventy_api'
 require 'yaml'
-# Example to get the attribute details using AccountAttributeDefinition/AllAttributeDefinitions api.
+# Example to get all the account's attribute definitions.
 class AllAttributeDefinitions
   def run
     # Load config file
