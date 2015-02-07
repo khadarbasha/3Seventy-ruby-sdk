@@ -1,6 +1,6 @@
 require 'three_seventy_api'
 require 'yaml'
-# Example to get the attribute details using AccountAttributeDefinition/AllAttributeDefinitions api.
+# Example to get the attribute details using AccountAttributeDefinition/GetAttributeDefinition api.
 class GetAttributeDefinition
   def run
     # Load config file
@@ -16,7 +16,7 @@ class GetAttributeDefinition
     attribute_id = -1 ## Fill the attribute_id here.
     # Initiate the client.
     client = ThreeSeventyApi::Client.new(url, username, password)
-    # Now make a call to AllAttributeDefinitions api and print the result.
+    # Now make a call to GetAttributeDefinition api and print the result.
     puts client.get_attribute_definition(account_id, attribute_id)
   end
 end
