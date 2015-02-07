@@ -1,7 +1,6 @@
 module ThreeSeventyApi
   module Api
     module AccountAttribute
-
       # Public: Gets all values set on an account. Note that inherited values are also returned. The ID of the account which the value is directly set is returned for reference.
       # 
       # account_id - Integer, Id of the account.

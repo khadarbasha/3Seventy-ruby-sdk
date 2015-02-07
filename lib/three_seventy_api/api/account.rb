@@ -1,7 +1,6 @@
 module ThreeSeventyApi
   module Api
     module Account
-
       # Public: Returns a list of accounts that exist for the user currently logged in.
       # 
       # options - The Hash options used to get the account based on acitivity. (default: {:inactive=>false}):
