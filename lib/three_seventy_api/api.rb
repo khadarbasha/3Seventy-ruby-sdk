@@ -4,5 +4,6 @@ module ThreeSeventyApi
   module Api
     include Account
     include AccountAttribute
+    include AccountAttributeCategory
   end
 end
