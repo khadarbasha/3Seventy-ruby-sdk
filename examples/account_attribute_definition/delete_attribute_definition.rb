@@ -1,6 +1,6 @@
 require 'three_seventy_api'
 require 'yaml'
-# Example to get the attribute details using AccountAttributeDefinition/DeleteAttributeDefinition api.
+# Example to delete an account's attribute definition.
 class DeleteAttributeDefinition
   def run
     # Load config file
