@@ -28,7 +28,7 @@ module ThreeSeventyApi
       # attribute_id - Integer, Id of the attribute.
       #       
       # Returns none.
-      def delete_atrribute_definition(account_id, attribute_id)
+      def delete_attribute_definition(account_id, attribute_id)
         end_point = "/account/#{account_id}/attributeDef/#{attribute_id}"
         delete(end_point)
       end
