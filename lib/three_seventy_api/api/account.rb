@@ -33,7 +33,7 @@ module ThreeSeventyApi
       # 
       # id - Integer, account id of the user.
       #
-      # Returns the response.
+      # Returns none.
       def delete_account(id)
         end_point = "/account/#{id}"
         delete(end_point)
