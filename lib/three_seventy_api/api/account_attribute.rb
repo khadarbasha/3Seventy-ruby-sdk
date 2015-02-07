@@ -1,21 +1,27 @@
 module ThreeSeventyApi
   module Api
     module AccountAttribute
-      def all_attibutes(account_id)
+      def all_attributes(account_id)
         end_point = "/account/#{account_id}/attribute"
         get(end_point)
       end
-      def attribute(account_id, name)
+      def get_attribute(account_id, name)
         end_point = "/account/#{account_id}/attribute/#{name}"
         get(end_point)
       end
-      def add_attribute(account_id, payload)
+      def add_attribute(account_id, name)
+        payload = {
+          "name" => name
+        }
         end_point = "/account/#{account_id}/attribute"
-        post(end_point,payload)
+        post(end_point, payload)
       end
-      def edit_attribute(account_id, payload)
+      def edit_attribute(account_id, name)
+        payload = {
+          "name" => name
+        }
         end_point = "/account/#{account_id}/attribute"
-        post(end_point,payload)
+        put(end_point, payload)
       end
       def delete_attribute(account_id, name)
         end_point = "/account/#{account_id}/attribute/#{name}"
