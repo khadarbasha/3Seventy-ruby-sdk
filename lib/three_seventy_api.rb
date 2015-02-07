@@ -7,9 +7,10 @@ require 'pry'
 module ThreeSeventyApi
   class Client
     include Helpers::Request
-    attr_reader :username, :password
+    attr_reader :username, :password, :url
     include Api
-    def initialize(username,password)
+    def initialize(url, username, password)
+      @url = url
       @username = username
       @password = password
     end
