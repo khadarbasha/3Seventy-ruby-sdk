@@ -20,7 +20,7 @@ class AddAccount
       "Name" => # Set Name here.,
       "Channels" => # Set channels here.,
       "Attributes"=> # Set attributes here.
-    }.to_json
+    }
     # Make a call to Account/AddAccount api and print the result.
     puts client.add_account(account_id, payload)
   end
