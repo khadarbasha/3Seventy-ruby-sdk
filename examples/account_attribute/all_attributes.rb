@@ -14,7 +14,7 @@ class AllAttributes
     # Load the password from config.
     password = config['password']
     # Initiate the client.
-    client = ThreeSeventyApi::Client.new(:url => url, :username => username, :password => password)
+    client = ThreeSeventyApi::Client.new(url, username,password)
     # Make a call to AccountAttribute/AllAttributes api and print the result.
     puts client.all_attributes(account_id)
   end
