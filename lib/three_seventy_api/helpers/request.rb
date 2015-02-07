@@ -14,7 +14,7 @@ module ThreeSeventyApi
       end
       def put(path, payload)
         begin
-          response = client[path].put payload, :accept => 'application/json', :content_type => 'application/json'
+          response = client[path].put payload.to_json, :accept => 'application/json', :content_type => 'application/json'
         rescue Exception => e
           puts e.inspect
         end
@@ -23,7 +23,7 @@ module ThreeSeventyApi
       
       def post(path, payload)
         begin
-          response = client[path].post payload, :accept => 'application/json', :content_type => 'application/json'
+          response = client[path].post payload.to_json, :accept => 'application/json', :content_type => 'application/json'
         rescue Exception => e
           puts e.inspect
         end
