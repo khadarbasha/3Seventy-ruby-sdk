@@ -16,12 +16,11 @@ module ThreeSeventyApi
         end_point = "/account/#{account_id}/attribute"
         post(end_point, payload)
       end
-      def edit_attribute(account_id, name)
-        payload = {
-          "name" => name
-        }
-        end_point = "/account/#{account_id}/attribute"
-        put(end_point, payload)
+      def edit_attribute(account_id, payload)
+        key_name = payload.keys.first
+        key_value = payload.values.first
+        end_point = "/account/#{account_id}/attribute/#{key_name}"
+        put(end_point, key_value)
       end
       def delete_attribute(account_id, name)
         end_point = "/account/#{account_id}/attribute/#{name}"
