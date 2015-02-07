@@ -16,6 +16,7 @@ class GetAttribute
     # Initiate the client.
     client = ThreeSeventyApi::Client.new(url, username, password)
     attribute_name = ## Add attribute to search here.
+    #attribute_name = "t70_contact_quota"
     # Now get the attribute details and print the result.
     puts client.get_attribute(account_id, attribute_name)
   end
