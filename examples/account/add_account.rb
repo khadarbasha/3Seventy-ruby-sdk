@@ -2,7 +2,7 @@ require 'three_seventy_api'
 # Example to add a new account using Account/AddAccount api.
 class AddAccount
   def run
-    # Load config file
+    # Load the config file
     config = YAML.load_file(File.expand_path("../../config.yml", __FILE__))
     # Load the account_id from config.
     account_id = config['account_id']

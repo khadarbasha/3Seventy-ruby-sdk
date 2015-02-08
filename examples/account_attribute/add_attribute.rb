@@ -3,7 +3,7 @@ require 'yaml'
 # Example to add a new attribute using AccountAttribute/AddAttribute api.
 class AddAttribute
   def run
-    # Load config file
+    # Load the config file
     config = YAML.load_file(File.expand_path("../../config.yml", __FILE__))
     # Load the account_id from config.
     account_id = config['account_id']

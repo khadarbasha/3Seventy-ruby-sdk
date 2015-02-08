@@ -2,10 +2,10 @@ require 'three_seventy_api'
 # Example to edit an account using Account/EditAccount api.
 class EditAccount
   def run
-    # Load config file
-    config = YAML.load_file(File.expand_path("../../config.yml", __FILE__))
+    # Load the config file
+    config = YAML.load_file(File.expand_path("../../config.yml", __FILE__) 
     # Load the account_id from config.
-    account_id = config['account_id']
+    account_id =  config['account_id']
     # Load the url from config.
     url = config['url']
     # Load the username from config.
