@@ -1,16 +1,12 @@
-# Public: Base class.
+# Base class.
 class Base
-  # Public: 
-  #       setter/getter for id.
-  #       Represents primary key of the model.
+  
+  # @return [Integer] The primary key of the model.
   attr_accessor :id
-  # Public: Creates the json structure for Base object.
+
+  # Creates the json structure for the account object.
   #
-  # Examples
-  #
-  #   json_
-  #
-  # Returns the json structure for Base object.
+  # @return [JSON] The json structure for an account object.
   def json_
     hash = {
       "Id" => id
