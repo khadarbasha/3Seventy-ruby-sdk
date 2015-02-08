@@ -1,15 +1,10 @@
 # Public: Details for an account.
 # Extends the Base class.
 class Account < Base
-  # Public: 
-  #       setter/getter for Status.
-  #       Represents the current status of the account.
-  #       This is the soft delete status.
+
+  # @attr status [String] Represents the current status of the account.   # This is the soft delete status.
   attr_accessor :status
-  # Public: 
-  #       setter/getter for parent_id.
-  #       Represents the parent id of the current account.
-  #       This will be null for the root account.
+  # @attr parent_id [Integer] Represents the parent id of the current account. This will be null for the root account.
   attr_accessor :parent_id
   # Public: 
   #       setter/getter for name.
