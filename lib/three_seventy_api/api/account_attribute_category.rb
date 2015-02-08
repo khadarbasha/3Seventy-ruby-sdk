@@ -12,7 +12,7 @@ module ThreeSeventyApi
         get(end_point)
       end
 
-      # Gets the details for a specific account attribute category.
+      # Get the details for a specific account attribute category.
       # 
       # @param id [Integer] Id of the category.
       # @return [Object] the details for a specific account attribute category.
