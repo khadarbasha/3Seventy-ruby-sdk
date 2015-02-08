@@ -3,7 +3,7 @@ require 'yaml'
 # Example to get all the account callbacks.
 class AllCallbacks
   def run
-    # Load config file
+    # Load the config file
     config = YAML.load_file(File.expand_path("../../config.yml", __FILE__))
     # Load the account_id from config.
     account_id = config['account_id']
@@ -15,7 +15,7 @@ class AllCallbacks
     password = config['password']
     # Initiate the client.
     client = ThreeSeventyApi::Client.new(url, username, password)
-    # Now make a call to AllAttributeDefinitions api and print the result.
+    # Now make a call to AllCallbacks api and print the result.
     puts client.all_callbacks(account_id)
   end
 end
