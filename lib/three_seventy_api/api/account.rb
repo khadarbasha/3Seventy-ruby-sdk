@@ -45,7 +45,7 @@ module ThreeSeventyApi
       # Edit an account.
       # 
       # @param id [Integer] Acount id of the user.
-      # @param payload [Hash] Account payload in Hash format.
+      # @param payload [Hash] Account payload in the Hash format.
       # @option payload [Integer] ParentId id of the parent account.
       # @option payload [String] Name Name of the account.
       # @option payload [Array<Integer>] Channels (null) List of channels to allow the contact to use.
