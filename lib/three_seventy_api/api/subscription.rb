@@ -62,7 +62,7 @@ module ThreeSeventyApi
       # @param account_id [Integer] Id of the account.
       # 
       # @return [Array<Object>] List of all the subscriptions. 
-      def all_subscription(account_id)
+      def all_subscriptions(account_id)
         end_point = "/account/#{account_id}/subscription"
         get(end_point)
       end
