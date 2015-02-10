@@ -13,7 +13,7 @@ class DeleteSubscription
     username = config['username']
     # Load the password from config.
     password = config['password']
-    subscription_id = # Fill with your subscription id here.
+    subscription_id = 402# Fill with your subscription id here.
     # Initiate the client.
     client = ThreeSeventyApi::Client.new(url, username, password)
     # Now make a call to DeleteSubscription api and print the result.

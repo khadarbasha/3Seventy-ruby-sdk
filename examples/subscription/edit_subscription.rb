@@ -15,8 +15,8 @@ class EditSubscription
     password = config['password']
     # Load ur payload here.
     payload = {
-      "Name" => "sub name edit1",## Fill content name here.,
-      "Label" =>"label edit2"## Fill content description here.
+      "Name" => ## Fill content name here.,
+      "Label" =>## Fill content description here.
     }
     subscription_id = #Load ur subscription id here.
     # Initiate the client.
