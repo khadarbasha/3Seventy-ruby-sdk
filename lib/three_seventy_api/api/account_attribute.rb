@@ -40,6 +40,7 @@ module ThreeSeventyApi
       # 
       # @return [Object] The modified attribute.
       def edit_attribute(account_id, payload)
+        # Convert symbol to string.
         key_name = payload.keys.first.to_s
         key_value = payload.values.first
         end_point = "/account/#{account_id}/attribute/#{key_name}"
