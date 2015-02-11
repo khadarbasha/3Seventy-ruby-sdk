@@ -60,7 +60,7 @@ module ThreeSeventyApi
       # @return [Object] Response object.
       def delete(path)
         begin
-          response = client[path].delete
+          response = client[path].delete :accept => 'application/json'
         rescue Exception => e
           puts e.inspect
         end
