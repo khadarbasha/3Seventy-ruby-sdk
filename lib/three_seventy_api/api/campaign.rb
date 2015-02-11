@@ -7,11 +7,11 @@ module ThreeSeventyApi
       # Get all the campaigns assosiated with an account.
       # 
       # @param account_id [Integer] Id of the account.
-      # @param only_me [Boolean] Toggle to display all the items.
+      # @param visibility [Boolean] Toggle to display all the items.
       # 
       # @return [Array<Object>] List all the campaigns.
-      def all_campaigns(account_id, only_mine)
-        end_point = "/account/#{account_id}/campaign?onlyMine=#{only_mine}"
+      def all_campaigns(account_id, visibility)
+        end_point = "/account/#{account_id}/campaign?onlyMine=#{visibility}"
         get(end_point)
       end
 
