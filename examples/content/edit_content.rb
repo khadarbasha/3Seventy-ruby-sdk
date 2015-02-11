@@ -1,6 +1,6 @@
 require 'three_seventy_api'
 require 'yaml'
-# Example to add a new content.
+# Example to edit content.
 class EditContent
   def run
     # Load the config file
