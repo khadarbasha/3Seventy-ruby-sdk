@@ -15,12 +15,12 @@ class AddCampaign
     password = config['password']
     # Load ur payload here.
     payload = {
-      "SubscriptionId" => "402", ## Fill subscription id here
-      "Name" => "campaign1", ## Fill campaign name here.
-      "CampaignTypeId" => "1", ## Fill campaign id here.
+      "SubscriptionId" => ## Fill subscription id here,
+      "Name" => , ## Fill campaign name here.,
+      "CampaignTypeId" => ## Fill campaign id here.,
       "Content" => {
-        "Name" => "testcampaign1", ## Fill content name here.
-        "Description" => "testcampaign1 desc" ## Fill the content description here.
+        "Name" => ## Fill content name here.,
+        "Description" => ## Fill the content description here.,
       }
     }
     # Initiate the client.

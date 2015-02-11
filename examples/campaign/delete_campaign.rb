@@ -13,7 +13,7 @@ class DeleteCampaign
     username = config['username']
     # Load the password from config.
     password = config['password']
-    campaign_id = 4476 # Set campaign id here.
+    campaign_id =  # Set campaign id here.
     # Initiate the client.
     client = ThreeSeventyApi::Client.new(url, username, password)
     # Now make a call to DeleteCampaign api and print the result.

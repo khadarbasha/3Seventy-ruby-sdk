@@ -13,15 +13,15 @@ class EditCampaign
     username = config['username']
     # Load the password from config.
     password = config['password']
-    campaign_id = 4483 ## Add campaign_id here.
+    campaign_id = ## Add campaign_id here.
     # Load the payload here.
     payload = {
-      "SubscriptionId" => "402", ## Fill subscription id here
-      "Name" => "campaign1edit1", ## Fill campaign name here.
-      "CampaignTypeId" => "1", ## Fill campaign id here.
+      "SubscriptionId" => ## Fill subscription id here.,
+      "Name" => ## Fill campaign name here.,
+      "CampaignTypeId" => ## Fill campaign id here.,
       "Content" => {
-        "Name" => "testcampaign1", ## Fill content name here.
-        "Description" => "testcampaign1 desc" ## Fill the content description here.
+        "Name" => ## Fill content name here.,
+        "Description" => ## Fill the content description here.
       }
     }
     # Initiate the client.
