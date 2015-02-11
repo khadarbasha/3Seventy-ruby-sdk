@@ -5,6 +5,7 @@ require "three_seventy_api/api/account_attribute_definition"
 require "three_seventy_api/api/callback"
 require "three_seventy_api/api/content"
 require "three_seventy_api/api/subscription"
+require "three_seventy_api/api/campaign"
 
 
 # Api endpoints entry module.
@@ -18,5 +19,6 @@ module ThreeSeventyApi
     include Callback
     include Content
     include Subscription
+    include Campaign
   end
 end
