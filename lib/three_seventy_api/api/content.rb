@@ -48,7 +48,6 @@ module ThreeSeventyApi
 
       # Get all the contents assosiated with an account.
       # 
-      # @param account_id [Integer] Id of the account.
       # 
       # @return [Array<Object>] List all the content. 
       def all_contents
