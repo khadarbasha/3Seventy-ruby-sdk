@@ -15,8 +15,8 @@ module ThreeSeventyApi
       # 
       # @return [Object] Response object.
       def get(path)
-        begin 
-          response =  client[path].get :accept => 'application/json', :content_type => 'application/json'
+        begin
+          response =  client[path].get :accept => 'application/json'
         rescue Exception => e
           puts e.inspect
         end
