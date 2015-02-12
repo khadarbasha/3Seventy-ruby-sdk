@@ -15,14 +15,14 @@ class EditContent
     password = config['password']
     # Load ur payload here.
     payload = {
-      "Name" => ## Fill content name here.,
+      "Name" => , ## Fill content name here.,
       "Description" => ## Fill content description here.,
     }
-    content_id = # Fill content id here.
+    content_id = 6192# Fill content id here.
     # Initiate the client.
-    client = ThreeSeventyApi::Client.new(url, username, password)
+    client = ThreeSeventyApi::Client.new(url, username, password, account_id)
     # Now make a call to EditContent api and print the result.
-    puts client.edit_content(account_id, content_id, payload)
+    puts client.edit_content(content_id, payload)
   end
 end
 example = EditContent.new

@@ -15,13 +15,13 @@ class AddContent
     password = config['password']
     # Load ur payload here.
     payload = {
-      "Name" => ## Fill content name here.,
+      "Name" => ,## Fill content name here.,
       "Description" =>## Fill content description here.
     }
     # Initiate the client.
-    client = ThreeSeventyApi::Client.new(url, username, password)
+    client = ThreeSeventyApi::Client.new(url, username, password, account_id)
     # Now make a call to AddCallback api and print the result.
-    puts client.add_content(account_id, payload)
+    puts client.add_content(payload)
   end
 end
 example = AddContent.new

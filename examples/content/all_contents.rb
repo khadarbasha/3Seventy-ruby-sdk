@@ -14,9 +14,9 @@ class AllContents
     # Load the password from config.
     password = config['password']
     # Initiate the client.
-    client = ThreeSeventyApi::Client.new(url, username, password)
+    client = ThreeSeventyApi::Client.new(url, username, password, account_id)
     # Now make a call to AllContents api and print the result.
-    puts client.all_contents(account_id)
+    puts client.all_contents
   end
 end
 example = AllContents.new

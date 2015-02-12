@@ -15,9 +15,9 @@ class DeleteContent
     password = config['password']
     content_id = # Fill with your content id here.
     # Initiate the client.
-    client = ThreeSeventyApi::Client.new(url, username, password)
+    client = ThreeSeventyApi::Client.new(url, username, password, account_id)
     # Now make a call to DeleteContent api and print the result.
-    puts client.delete_content(account_id, content_id)
+    puts client.delete_content(content_id)
   end
 end
 example = DeleteContent.new

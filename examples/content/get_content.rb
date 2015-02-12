@@ -15,9 +15,9 @@ class GetContent
     password = config['password']
     content_id = # Fill with content id here.
     # Initiate the client.
-    client = ThreeSeventyApi::Client.new(url, username, password)
+    client = ThreeSeventyApi::Client.new(url, username, password, account_id)
     # Now make a call to GetContent api and print the result.
-    puts client.get_content(account_id, content_id)
+    puts client.get_content(content_id)
   end
 end
 example = GetContent.new
