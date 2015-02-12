@@ -11,7 +11,7 @@ require "three_seventy_api/api/campaign"
 # Api endpoints entry module.
 module ThreeSeventyApi
   module Api
-    # Include every endpoint.
+    # Include every endpoint here.
     include Account
     include AccountAttribute
     include AccountAttributeCategory
