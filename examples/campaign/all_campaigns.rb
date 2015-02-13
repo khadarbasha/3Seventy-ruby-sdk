@@ -14,10 +14,10 @@ class AllCampaigns
     # Load the password from config.
     password = config['password']
     # Initiate the client.
-    visibility = "true" # Set all the campaigns visibility here.
-    client = ThreeSeventyApi::Client.new(url, username, password)
+    visibility =  # Set all the campaigns visibility here.
+    client = ThreeSeventyApi::Client.new(url, username, password, account_id)
     # Now make a call to AllCampaigns api and print the result.
-    puts client.all_campaigns(account_id, visibility)
+    puts client.all_campaigns(visibility)
   end
 end
 example = AllCampaigns.new

@@ -16,18 +16,18 @@ class EditCampaign
     campaign_id = ## Add campaign_id here.
     # Load the payload here.
     payload = {
-      "SubscriptionId" => ## Fill subscription id here.,
-      "Name" => ## Fill campaign name here.,
-      "CampaignTypeId" => ## Fill campaign id here.,
+      "SubscriptionId" => , ## Fill subscription id here,
+      "Name" => , ## Fill campaign name here.,
+      "CampaignTypeId" => ,## Fill campaign id here.,
       "Content" => {
-        "Name" => ## Fill content name here.,
-        "Description" => ## Fill the content description here.
+        "Name" => ,## Fill content name here.,
+        "Description" => ## Fill the content description here.,
       }
     }
     # Initiate the client.
-    client = ThreeSeventyApi::Client.new(url, username, password)
+    client = ThreeSeventyApi::Client.new(url, username, password, account_id)
     # Now make a call to EditCampaign api and print the result.
-    puts client.edit_campaign(account_id, campaign_id, payload)
+    puts client.edit_campaign(campaign_id, payload)
   end
 end
 example = EditCampaign.new

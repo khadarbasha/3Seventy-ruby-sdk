@@ -15,18 +15,18 @@ class AddCampaign
     password = config['password']
     # Load ur payload here.
     payload = {
-      "SubscriptionId" => ## Fill subscription id here,
+      "SubscriptionId" => , ## Fill subscription id here,
       "Name" => , ## Fill campaign name here.,
-      "CampaignTypeId" => ## Fill campaign id here.,
+      "CampaignTypeId" => ,## Fill campaign id here.,
       "Content" => {
-        "Name" => ## Fill content name here.,
+        "Name" => ,## Fill content name here.,
         "Description" => ## Fill the content description here.,
       }
     }
     # Initiate the client.
-    client = ThreeSeventyApi::Client.new(url, username, password)
+    client = ThreeSeventyApi::Client.new(url, username, password, account_id)
     # Now make a call to AddCampaign api and print the result.
-    puts client.add_campaign(account_id, payload)
+    puts client.add_campaign(payload)
   end
 end
 example = AddCampaign.new

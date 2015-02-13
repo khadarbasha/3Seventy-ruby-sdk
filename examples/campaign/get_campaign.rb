@@ -15,9 +15,9 @@ class GetCampaign
     password = config['password']
     campaign_id = # Set campaign id here.
     # Initiate the client.
-    client = ThreeSeventyApi::Client.new(url, username, password)
+    client = ThreeSeventyApi::Client.new(url, username, password, account_id)
     # Now make a call to GetCampaign api and print the result.
-    puts client.get_campaign(account_id, campaign_id)
+    puts client.get_campaign(campaign_id)
   end
 end
 example = GetCampaign.new
