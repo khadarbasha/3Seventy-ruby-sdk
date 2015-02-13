@@ -4,6 +4,7 @@ module ThreeSeventyApi
     # @see https://api.3seventy.com/docs/v2.0/Default/endpoints#!/callback
     module Callback
 
+
       # Get all the callbacks assosiated with an account.
       # 
       # @param account_id [Integer] Id of the account.

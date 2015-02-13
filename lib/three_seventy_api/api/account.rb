@@ -4,6 +4,7 @@ module ThreeSeventyApi
     # @see https://api.3seventy.com/docs/v2.0/Default/endpoints#!/account
     module Account
       
+      
       # List all the accounts that exist for the user currently logged in.
       # 
       # @param options [Hash] The Hash options used to get the account based on acitivity.

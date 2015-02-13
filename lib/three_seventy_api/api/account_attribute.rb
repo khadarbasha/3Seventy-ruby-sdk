@@ -4,6 +4,7 @@ module ThreeSeventyApi
     # @see https://api.3seventy.com/docs/v2.0/Default/endpoints#!/accountattribute
     module AccountAttribute
 
+
       # Gets all values set on an account. Note that inherited values are also returned. The ID of the account which the value is directly set is returned for reference.
       # 
       # @param account_id [Integer] Account Id of the user.

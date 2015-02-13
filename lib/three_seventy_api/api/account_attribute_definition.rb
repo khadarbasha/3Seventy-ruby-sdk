@@ -4,6 +4,7 @@ module ThreeSeventyApi
     # @see  https://api.3seventy.com/docs/v2.0/Default/endpoints#!/accountattributedefinition
     module AccountAttributeDefinition
 
+
       # Gets a list of all attribute defintions this account has access to.
       # 
       # @param id [Integer] Id of the account.

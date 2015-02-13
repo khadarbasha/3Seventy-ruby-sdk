@@ -4,6 +4,7 @@ module ThreeSeventyApi
     # @see  https://api.3seventy.com/docs/v2.0/Default/endpoints#!/accountattributecategory
     module AccountAttributeCategory
 
+
       # Lists all the categories of account attributes.
       # 
       # @return [Array<Object>] The list of all categories of account attributes.
