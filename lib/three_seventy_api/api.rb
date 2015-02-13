@@ -12,11 +12,11 @@ require "three_seventy_api/api/campaign"
 module ThreeSeventyApi
   module Api
     # Include every endpoint here.
-    include Account
-    include AccountAttribute
-    include AccountAttributeCategory
-    include AccountAttributeDefinition
-    include Callback
+    # include Account
+    # include AccountAttribute
+    # include AccountAttributeCategory
+    # include AccountAttributeDefinition
+    # include Callback
     include Content
     include Subscription
     include Campaign
