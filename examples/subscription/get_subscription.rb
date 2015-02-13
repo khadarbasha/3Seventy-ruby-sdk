@@ -15,9 +15,9 @@ class GetSubscription
     password = config['password']
     subscription_id = # Fill with subscription id here.
     # Initiate the client.
-    client = ThreeSeventyApi::Client.new(url, username, password)
+    client = ThreeSeventyApi::Client.new(url, username, password, account_id)
     # Now make a call to GetSubscription api and print the result.
-    puts client.get_subscription(account_id, subscription_id)
+    puts client.get_subscription(subscription_id)
   end
 end
 example = GetSubscription.new

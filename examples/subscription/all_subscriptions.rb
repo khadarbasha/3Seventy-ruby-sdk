@@ -14,9 +14,9 @@ class AllSubscriptions
     # Load the password from config.
     password = config['password']
     # Initiate the client.
-    client = ThreeSeventyApi::Client.new(url, username, password)
+    client = ThreeSeventyApi::Client.new(url, username, password, account_id)
     # Now make a call to AllSubscriptions api and print the result.
-    puts client.all_subscriptions(account_id)
+    puts client.all_subscriptions
   end
 end
 example = AllSubscriptions.new

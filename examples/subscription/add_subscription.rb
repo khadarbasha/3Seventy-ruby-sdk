@@ -15,13 +15,13 @@ class AddSubscription
     password = config['password']
     # Load ur payload here.
     payload = {
-      "Name" => ## Fill content name here.,
-      "Label" =>## Fill content description here.
+      "Name" => ,## Fill content name here.,
+      "Label" => ## Fill content description here.
     }
     # Initiate the client.
-    client = ThreeSeventyApi::Client.new(url, username, password)
+    client = ThreeSeventyApi::Client.new(url, username, password, account_id)
     # Now make a call to AddSubscription api and print the result.
-    puts client.add_subscription(account_id, payload)
+    puts client.add_subscription(payload)
   end
 end
 example = AddSubscription.new

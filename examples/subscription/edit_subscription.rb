@@ -15,14 +15,14 @@ class EditSubscription
     password = config['password']
     # Load ur payload here.
     payload = {
-      "Name" => ## Fill content name here.,
-      "Label" =>## Fill content description here.
+      "Name" => "lw_1",## Fill content name here.,
+      "Label" =>"llw_l1"# Fill content description here.
     }
     subscription_id = #Load ur subscription id here.
     # Initiate the client.
-    client = ThreeSeventyApi::Client.new(url, username, password)
+    client = ThreeSeventyApi::Client.new(url, username, password, account_id)
     # Now make a call to EditSubscription api and print the result.
-    puts client.edit_subscription(account_id, subscription_id, payload)
+    puts client.edit_subscription(subscription_id, payload)
   end
 end
 example = EditSubscription.new
