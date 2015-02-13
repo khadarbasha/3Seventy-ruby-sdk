@@ -3,6 +3,7 @@ require 'yaml'
 # Example to get all the account callbacks.
 class AllCallbacks
   def run
+    
     # Load the config file
     config = YAML.load_file(File.expand_path("../../config.yml", __FILE__))
     # Load the account_id from config.

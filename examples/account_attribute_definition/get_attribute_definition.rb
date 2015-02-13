@@ -3,6 +3,7 @@ require 'yaml'
 # Example to get the attribute definition details.
 class GetAttributeDefinition
   def run
+    
     # Load the config file
     config = YAML.load_file(File.expand_path("../../config.yml", __FILE__))
     # Load the account_id from config.
