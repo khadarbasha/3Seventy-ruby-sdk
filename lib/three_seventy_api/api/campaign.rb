@@ -6,29 +6,25 @@ module ThreeSeventyApi
 
       # Get all the campaigns assosiated with an account.
       # 
-      # @param account_id [Integer] Id of the account.
       # @param visibility [Boolean] Toggle to display all the items.
       # 
       # @return [Array<Object>] List all the campaigns.
-      def all_campaigns(account_id, visibility)
-        end_point = "/account/#{account_id}/campaign?onlyMine=#{visibility}"
+      def all_campaigns(visibility)
+        end_point = url_("campaign")+"?onlyMine=#{visibility}"
         get(end_point)
       end
 
       # Retrieve the campaign.
       # 
-      # @param account_id [Integer] Id of the account.
       # @param campaign_id [Integer] Id of the content.
       # 
       # @return [Object] Campaign object.
-      def get_campaign(account_id, campaign_id)
-        end_point = "/account/#{account_id}/campaign/#{campaign_id}"
-        get(end_point)
+      def get_campaign(campaign_id)
+        get(url_("campaign", campaign_id))
       end
 
       # Add a new campaign.
       # 
-      # @param account_id [Integer] Id of the account.
       # @param payload [Hash] Body of the campaign.
       # @option payload [String] SubscriptionId Id of the subscription.
       # @option payload [String] Name Campaign name.
@@ -44,9 +40,8 @@ module ThreeSeventyApi
       # @option payload [Array] Links (null) Array of links.
       # 
       # @return [Object] Newly created campaign object.
-      def add_campaign(account_id, payload)
-        end_point = "/account/#{account_id}/campaign"
-        post(end_point, payload)
+      def add_campaign(payload)
+        post(url_("campaign"), payload)
       end
       
       # Delete the campaign.
@@ -55,14 +50,12 @@ module ThreeSeventyApi
       # @param campaign_id [Integer] Id of the campaign.
       # 
       # @return none.
-      def delete_campaign(account_id, campaign_id)
-        end_point = "/account/#{account_id}/campaign/#{campaign_id}"
-        delete(end_point)
+      def delete_campaign(campaign_id)
+        delete(url_("campaign", campaign_id))
       end
 
       # Edit a campaign.
       # 
-      # @param account_id [Integer] Id of the account.
       # @param campaign_id [Integer] Id of the campaign.
       # @param payload [Hash] Body of the campaign.
       # @option payload [String] SubscriptionId Id of the subscription.
@@ -79,9 +72,8 @@ module ThreeSeventyApi
       # @option payload [Array] Links (null) Array of links.
       # 
       # @return [Object] Modified campaign object.
-      def edit_campaign(account_id, campaign_id, payload)
-        end_point = "/account/#{account_id}/campaign/#{campaign_id}"
-        put(end_point, payload)
+      def edit_campaign(campaign_id, payload)
+        put(url_("campaign", campaign_id), payload)
       end
     end
   end
