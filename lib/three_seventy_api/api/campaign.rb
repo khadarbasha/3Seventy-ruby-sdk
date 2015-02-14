@@ -1,6 +1,6 @@
 module ThreeSeventyApi
   module Api
-    # Content Api end point implementation goes here.
+    # Campaign Api end point implementation goes here.
     # @see https://api.3seventy.com/docs/v2.0/Default/endpoints#!/campaign
     module Campaign
 
