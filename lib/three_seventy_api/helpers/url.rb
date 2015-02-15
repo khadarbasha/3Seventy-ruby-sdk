@@ -1,7 +1,7 @@
 module ThreeSeventyApi
   module Helpers
     module Url
-      def url_(*args)
+      def url_ (*args)
         base_path = "/account/#{account_id}/#{args[0]}"
         base_path += "/#{args[1]}" if args.length > 1
         return base_path
