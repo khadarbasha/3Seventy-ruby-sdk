@@ -3,7 +3,6 @@ require "three_seventy_api/api/subscription"
 require "three_seventy_api/api/campaign"
 require "three_seventy_api/api/event_push_campaign"
 
-
 # Api endpoints entry module.
 module ThreeSeventyApi
   module Api
