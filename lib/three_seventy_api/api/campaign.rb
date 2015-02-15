@@ -4,11 +4,11 @@ module ThreeSeventyApi
     # @see https://api.3seventy.com/docs/v2.0/Default/endpoints#!/campaign
     module Campaign
 
-      # Get all the campaigns assosiated with an account.
+      # Gets a list of all campaigns belonging to an account.
       # 
       # @param visibility [Boolean] Toggle to display all the items.
       # 
-      # @return [Array<Object>] List all the campaigns.
+      # @return [Model#Campaign>] List all the campaigns.
       def all_campaigns(visibility)
         end_point = url_("campaign")+"?onlyMine=#{visibility}"
         get(end_point)
