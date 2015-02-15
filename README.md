@@ -23,14 +23,11 @@ Or install it yourself as:
 Initialize the client
 ```ruby
    client = ThreeSeventyApi::Client.new($username,$password)
-   client.all_accounts() (or)
-   client.all_accounts({:inactive=>true}) 
-
 ```
 ## Currently Supported API's 
 ```ruby
-    Account
-    AccountAttribute
-    AccountAttributeCategory
-    AccountAttributeDefinition
+    Content
+    Subscription
+    Campaign
+    EventPushCampaign
 ```
