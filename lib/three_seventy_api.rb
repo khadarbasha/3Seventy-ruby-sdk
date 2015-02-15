@@ -1,10 +1,9 @@
 require 'rest-client'
-require 'json-schema'
 require 'three_seventy_api/version'
-require 'three_seventy_api/api'
-require 'three_seventy_api/model'
 require 'three_seventy_api/helpers/request'
 require 'three_seventy_api/helpers/url'
+require 'three_seventy_api/api'
+
 require 'pry'
 
 module ThreeSeventyApi
@@ -15,8 +14,6 @@ module ThreeSeventyApi
     include Helpers::Url
     attr_reader :username, :password, :url, :account_id
     include Api
-    include Model
-
     # Constructor for the client.
     # 
     # @param url [String] Base url of the api.
