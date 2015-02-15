@@ -3,7 +3,6 @@ module ThreeSeventyApi
     # Content Api end point implementation goes here.
     # @see https://api.3seventy.com/docs/v2.0/Default/endpoints#!/content
     module Content
-
       # Creates a new content group.
       # 
       # @param payload [Hash] Body of the content.
@@ -13,7 +12,7 @@ module ThreeSeventyApi
       #
       # @return [Object] Newly created content object.
       def add_content(payload)
-        post(_url("content"), payload)
+        post(url_("content"), payload)
       end
 
       # Gets a specific content group object.
@@ -22,7 +21,7 @@ module ThreeSeventyApi
       # 
       # @return [Object] Content object.
        def get_content(content_id)
-        get(_url("content", content_id))
+        get(url_("content", content_id))
       end
 
       # Updates details about a content group.
@@ -35,7 +34,7 @@ module ThreeSeventyApi
       # 
       # @return [Object] Modified content object.
       def edit_content(content_id, payload)
-        put(_url("content", content_id), payload)
+        put(url_("content", content_id), payload)
       end
 
       # Deletes a content group.
@@ -44,7 +43,7 @@ module ThreeSeventyApi
       #
       # @return none.
       def delete_content(content_id)
-        delete(_url("content", content_id))
+        delete(url_("content", content_id))
       end
 
       # Lists all content group objects on an account.
@@ -52,8 +51,8 @@ module ThreeSeventyApi
       # 
       # @return [Array<Object>] List all the content. 
       def all_contents
-        get(_url("content"))
-      end
+        get(url_("content"))
+      end  
     end
   end
 end
