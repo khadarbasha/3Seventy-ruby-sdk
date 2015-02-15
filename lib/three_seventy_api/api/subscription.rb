@@ -3,7 +3,7 @@ module ThreeSeventyApi
     # Subscription Api end point implementation goes here.
     # @see https://api.3seventy.com/docs/v2.0/Default/endpoints#!/subscription
     module Subscription
-      # Add a new subscription.
+      # Creates a new subscription object.
       # 
       # @param payload [Hash] Body of the subscription.
       # @option payload [String] Name Subscription name.
@@ -17,7 +17,7 @@ module ThreeSeventyApi
         post(url_("subscription"), payload)
       end
 
-      # Retrieve a subscription.
+      # Returns the details for a specific subscription object.
       # 
       # @param subscription_id [Integer] Id of the subscription.
       # 
@@ -26,7 +26,7 @@ module ThreeSeventyApi
         get(url_("subscription", subscription_id))
       end
 
-      # Edit a subscription.
+      # Adjusts the details of a subscription object.
       # 
       # @param subscription_id [Integer] Id of the subscription.
       # @param payload [Hash] Body of the subscription.
@@ -40,7 +40,7 @@ module ThreeSeventyApi
         put(url_("subscription", subscription_id), payload)
       end
 
-      # Delete the subscription.
+      # Removes a subscription object.
       # 
       # @param subscription_id [Integer] Id of the subscription.
       # 
