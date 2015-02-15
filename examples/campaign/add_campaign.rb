@@ -15,8 +15,8 @@ class AddCampaign
     password = config['password']
     # Load ur payload here.
     payload = {
-      "SubscriptionId" => , ## Fill subscription id here,
-      "Name" => , ## Fill campaign name here.,
+      "SubscriptionId" => , ## Fill the subscription id here,
+      "Name" => , ## Fill the campaign name here.,
       "CampaignTypeId" => ,## Fill campaign id here.,
       "Content" => {
         "Name" => ,## Fill content name here.,
