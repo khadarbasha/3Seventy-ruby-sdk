@@ -8,7 +8,6 @@ module ThreeSeventyApi
       def client
         @client ||= RestClient::Resource::new(@url, :user => @username, :password => @password)
       end
-
       # Used to make a GET request.
       # 
       # @param path [String] Url of the request.
@@ -20,7 +19,6 @@ module ThreeSeventyApi
         rescue Exception => e
           puts e.inspect
         end
-        response
       end
 
       # Used to make a PUT request.
@@ -35,7 +33,6 @@ module ThreeSeventyApi
         rescue Exception => e
           puts e.inspect
         end
-        response
       end
 
       # Used to make a POST request.
@@ -50,7 +47,6 @@ module ThreeSeventyApi
         rescue Exception => e
           puts e.inspect
         end
-        response
       end
 
       # Used to make a DELETE request.
@@ -64,7 +60,6 @@ module ThreeSeventyApi
         rescue Exception => e
           puts e.inspect
         end
-        response
       end
     end
   end
