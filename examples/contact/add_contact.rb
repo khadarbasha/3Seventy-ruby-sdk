@@ -1,7 +1,7 @@
 require 'three_seventy_api'
 require 'yaml'
-# Example to get the contact.
-class GetContact
+# Example to add a new contact.
+class AddContact
   def run
     # Load the config file
     config = YAML.load_file(File.expand_path("../../config.yml", __FILE__))
@@ -13,12 +13,16 @@ class GetContact
     username = config['username']
     # Load the password from config.
     password = config['password']
-    contact_id = 1588615# Set the contact id here.
+    # Load the payload here.
+    payload = {
+      "PhoneNumber" => , # Load phone number here. 
+      "Email" => # Load email here.
+    }
     # Initiate the client.
     client = ThreeSeventyApi::Client.new(url, username, password, account_id)
-    # Now make a call to GetContact api and print the result.
-    puts client.get_contact(contact_id)
+    # Now make a call to AddContact api and print the result.
+    puts client.add_contact(payload)
   end
 end
-example = GetContact.new
+example = AddContact.new
 example.run
