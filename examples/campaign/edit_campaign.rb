@@ -1,6 +1,6 @@
 require 'three_seventy_api'
 require 'yaml'
-# Example to edit a new campaign.
+# Example to edit a campaign.
 class EditCampaign
   def run
     # Load the config file
