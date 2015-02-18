@@ -22,8 +22,16 @@ Or install it yourself as:
 
 Initialize the client
 ```ruby
-   client = ThreeSeventyApi::Client.new($username,$password)
+   client = ThreeSeventyApi::Client.new($url, $username, $password, $account_id)
 ```
+## Generating the Documentation (During Development)
+
+```ruby
+    yard server --gems
+```
+Now visit http://0.0.0.0:8808/docs/three_seventy_api/frames to view the documentation.
+
+
 ## Currently Supported API's 
 ```ruby
     Content
