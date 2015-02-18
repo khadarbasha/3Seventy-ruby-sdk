@@ -4,25 +4,17 @@ Ruby wrapper for 3Seventy Api.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+During Development
+
+Navigate down to source directory and then 
 
 ```ruby
-gem 'three_seventy_api'
+rake install
 ```
+or Navigate down to source/pkg directory and then
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install three_seventy_api
-
-## Sample Usage
-
-Initialize the client
 ```ruby
-   client = ThreeSeventyApi::Client.new($url, $username, $password, $account_id)
+gem install --local three_seventy_api-2.0.0.gem
 ```
 ## Generating the Documentation (During Development)
 
@@ -32,6 +24,12 @@ Initialize the client
 Now visit http://0.0.0.0:8808/docs/three_seventy_api/frames to view the documentation.
 
 
+## Sample Usage
+
+Initialize the client
+```ruby
+   client = ThreeSeventyApi::Client.new($url, $username, $password, $account_id)
+```
 ## Currently Supported API's 
 ```ruby
     Content
