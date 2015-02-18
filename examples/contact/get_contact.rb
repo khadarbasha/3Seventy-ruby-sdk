@@ -13,7 +13,7 @@ class GetContact
     username = config['username']
     # Load the password from config.
     password = config['password']
-    contact_id = 1588615# Set the contact id here.
+    contact_id = # Set the contact id here.
     # Initiate the client.
     client = ThreeSeventyApi::Client.new(url, username, password, account_id)
     # Now make a call to GetContact api and print the result.
