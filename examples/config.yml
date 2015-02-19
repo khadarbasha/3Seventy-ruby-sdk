@@ -1,0 +1,5 @@
+## All your config goes here.
+url: # Add api base url here.
+username: # Add api username here.
+password: # Add api password here.
+account_id: # Add account_id here.
