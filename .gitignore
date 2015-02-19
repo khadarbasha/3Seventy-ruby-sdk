@@ -12,6 +12,5 @@
 *.o
 *.a
 mkmf.log
-config.yml
 examples/base.rb
 lib/three_seventy_api/helpers/input_validator.rb
