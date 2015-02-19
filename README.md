@@ -36,4 +36,7 @@ Initialize the client
     Subscription
     Campaign
     EventPushCampaign
+    Contact
+    ContactAttribute
+    Account
 ```
